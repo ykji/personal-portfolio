@@ -1,7 +1,8 @@
+import { SiCodeforces } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SocialLink } from "../interfaces/social-link";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const SocialLinks = () => {
   const socialLinks: SocialLink[] = [
@@ -37,6 +38,15 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
+          Codeforces <SiCodeforces size={30} />
+        </>
+      ),
+      href: "https://codeforces.com/profile/__ykji",
+    },
+    {
+      id: 5,
+      child: (
+        <>
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
@@ -51,7 +61,7 @@ const SocialLinks = () => {
         <li
           key={id}
           className={
-            "flex bg-gray-500 w-40 h-14 px-4 ml-[-100px] hover:rounded-md hover:ml-[-10px] duration-200" +
+            "flex bg-gray-500 w-40 h-14 px-4 ml-[-102px] hover:rounded-md hover:ml-[-10px] duration-200" +
             " " +
             style
           }
