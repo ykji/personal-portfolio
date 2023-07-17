@@ -1,43 +1,53 @@
-import React, { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { useState } from "react";
+import { Link } from "react-scroll";
 import { navLinks } from "../utility/constants";
+import { FaBars, FaTimes } from "react-icons/fa";
 
-const NavBar = () => {
+function NavBar() {
   const [nav, setNav] = useState(false);
 
   return (
     <div className="flex justify-between items-center px-4 text-white bg-black fixed w-full h-20">
-      <h1 className="text-5xl">{'<YashVarshney />'}</h1>
+      <h1 className="text-5xl font-semibold">{"<YashVarshney />"}</h1>
 
-      <ul className="hidden md:flex">
+      <ul className="hidden lg:flex">
         {navLinks.map(({ id, link }) => (
           <li
             key={id}
             className="cursor-pointer font-medium capitalize hover:scale-105 duration-200 text-gray-500 px-4"
           >
-            {link}
+            <Link to={link} smooth duration={500}>
+              {link}
+            </Link>
           </li>
         ))}
       </ul>
 
       <div
-        className="mr-4 text-gray-500 cursor-pointer md:hidden z-10"
+        className="mr-4 text-gray-500 cursor-pointer lg:hidden z-10"
         onClick={() => setNav(!nav)}
       >
         {nav ? <FaTimes size={30} /> : <FaBars size={30} />}
       </div>
 
       {nav && (
-        <ul className="absolute flex flex-col items-center justify-center top-0 left-0 text-gray-500 w-full h-screen bg-gradient-to-b from-black to-gray-800 md:hidden">
+        <ul className="absolute flex flex-col items-center justify-center top-0 left-0 text-gray-500 w-full h-screen bg-gradient-to-b from-black to-gray-800 lg:hidden capitalize">
           {navLinks.map(({ id, link }) => (
             <li key={id} className="cursor-pointer text-4xl py-6">
-              {link}
+              <Link
+                onClick={() => setNav(!nav)}
+                to={link}
+                smooth
+                duration={500}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>
       )}
     </div>
   );
-};
+}
 
 export default NavBar;

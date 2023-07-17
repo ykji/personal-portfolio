@@ -1,9 +1,10 @@
 import { NavLink } from "../interfaces/nav-link";
 
 export const navLinks: NavLink[] = [
-  { id: 1, link: "Home" },
-  { id: 2, link: "About" },
-  { id: 3, link: "Portfolio" },
-  { id: 4, link: "Experience" },
-  { id: 5, link: "Contact" },
+  { id: 1, link: "home" },
+  { id: 2, link: "about" },
+  { id: 3, link: "portfolio" },
+  { id: 4, link: "experience" },
+  { id: 5, link: "techstack" },
+  { id: 6, link: "contact" },
 ];
