@@ -1,5 +1,6 @@
 import Home from "./components/Home";
 import About from "./components/About";
+import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 import TechStack from "./components/TechStack";
@@ -16,6 +17,7 @@ function App() {
       {/* <Portfolio /> */}
       <TechStack />
       <Contact />
+      <Footer />
     </>
   );
 }
