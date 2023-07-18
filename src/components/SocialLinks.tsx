@@ -1,8 +1,8 @@
 import { SiCodeforces } from "react-icons/si";
 import { HiOutlineMail } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
 import { SocialLink } from "../interfaces/social-link";
+import { BsFillPersonLinesFill, BsInstagram } from "react-icons/bs";
 
 const SocialLinks = () => {
   const socialLinks: SocialLink[] = [
@@ -45,6 +45,15 @@ const SocialLinks = () => {
     },
     {
       id: 5,
+      child: (
+        <>
+          Instagram <BsInstagram size={30} />
+        </>
+      ),
+      href: "https://instagram.com/___whykay?igshid=OGQ5ZDc2ODk2ZA==",
+    },
+    {
+      id: 6,
       child: (
         <>
           Resume <BsFillPersonLinesFill size={30} />
