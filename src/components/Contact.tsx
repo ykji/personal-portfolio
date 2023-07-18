@@ -1,20 +1,7 @@
 import SocialLinks from "./SocialLinks";
-import { useEffect, useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
 const Contact = () => {
-  const [email, setEmail] = useState("");
-  const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [isSubmitButtonDisabled, setIsSubmitButtonDisabled] = useState(true);
-
-  useEffect(() => {
-    if (email && name && message) {
-      console.log("good");
-      setIsSubmitButtonDisabled(false);
-    }
-  }, [email, name, message]);
-
   return (
     <div
       id="contact"
@@ -36,14 +23,13 @@ const Contact = () => {
           <form
             method="POST"
             className=" flex flex-col w-1/2"
-            action="https://getform.io/f/8280fe9c-5c43-4480-86fa-f45df8ba6"
+            action="https://getform.io/f/8280fe9c-5c43-4480-86fa-f45df8ba6fcb"
           >
             <input
               required
               type="text"
               name="name"
               placeholder="Enter your name"
-              onChange={(e) => setName(e.target.value)}
               className="p-2 bg-transparent border-2 rounded-md text-gray-300 border-gray-400 focus:outline-none"
             />
             <input
@@ -51,22 +37,16 @@ const Contact = () => {
               type="email"
               name="email"
               placeholder="Enter your email"
-              onChange={(e) => setEmail(e.target.value)}
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-gray-300 border-gray-400 focus:outline-none"
+              className={`my-4 p-2 bg-transparent border-2 rounded-md text-gray-300 border-gray-400 focus:outline-none`}
             />
             <textarea
               required
               rows={10}
               name="message"
               placeholder="Enter your message"
-              onChange={(e) => setMessage(e.target.value)}
               className="p-2 bg-transparent border-2 rounded-md text-gray-300 border-gray-400 focus:outline-none"
             ></textarea>
-
-            <button
-              disabled={isSubmitButtonDisabled}
-              className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300"
-            >
+            <button className="text-white bg-gradient-to-b from-cyan-500 to-blue-500 px-6 py-3 my-8 mx-auto flex items-center rounded-md hover:scale-110 duration-300">
               Let's talk
             </button>
           </form>
