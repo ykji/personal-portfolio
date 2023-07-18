@@ -1,5 +1,5 @@
 import { techs } from "../utility/constants";
-
+import { FaAngleDoubleDown } from "react-icons/fa";
 const TechStack = () => {
   return (
     <div
@@ -11,7 +11,12 @@ const TechStack = () => {
           <h2 className="text-4xl border-b-4 border-gray-500 inline">
             Techstack
           </h2>
-          <p className="py-6">These are the technologies I've worked with.</p>
+          <p className="py-6 flex items-center">
+            These are the technologies I've worked with
+            <span className="ml-2">
+              <FaAngleDoubleDown size={20} />
+            </span>
+          </p>
         </div>
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => {

@@ -1,9 +1,10 @@
-import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
-import installNode from "../assets/portfolio/installNode.jpg";
+import { FaAngleDoubleDown } from "react-icons/fa";
 import navbar from "../assets/portfolio/navbar.jpg";
-import reactParallax from "../assets/portfolio/reactParallax.jpg";
 import reactSmooth from "../assets/portfolio/reactSmooth.jpg";
+import installNode from "../assets/portfolio/installNode.jpg";
 import reactWeather from "../assets/portfolio/reactWeather.jpg";
+import reactParallax from "../assets/portfolio/reactParallax.jpg";
+import arrayDestruct from "../assets/portfolio/arrayDestruct.jpg";
 
 const Portfolio = () => {
   const portfolios = [
@@ -43,7 +44,12 @@ const Portfolio = () => {
           <h2 className="text-4xl border-b-4 border-gray-500 inline">
             Portfolio
           </h2>
-          <p className="pt-6">Check out some of my work below</p>
+          <p className="py-6 flex items-center">
+            Check out some of my work below
+            <span className="ml-2">
+              <FaAngleDoubleDown size={20} />
+            </span>
+          </p>
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 px-12 sm:px-0 mx-auto">
           {portfolios.map(({ id, src }) => {

@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 const Contact = () => {
   const [email, setEmail] = useState("");
@@ -23,7 +24,12 @@ const Contact = () => {
           <h2 className="text-4xl border-b-4 border-gray-500 inline">
             Contact
           </h2>
-          <p className="py-6">Submit the form to get in touch with me.</p>
+          <p className="py-6 flex items-center">
+            Submit the form to get in touch with me
+            <span className="ml-2">
+              <FaAngleDoubleDown size={20} />
+            </span>
+          </p>
         </div>
         <div className=" flex justify-center items-center">
           <form
