@@ -11,20 +11,23 @@ const About = () => {
           <h2 className="text-4xl border-b-4 border-gray-500 inline">About</h2>
         </div>
         <p className="text-xl mt-10">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Perspiciatis, cumque. Incidunt, adipisci. Molestiae soluta illo
-          eveniet cumque in minima nesciunt qui expedita modi veritatis quasi
-          porro vero unde maiores officiis, officia eligendi ipsam, adipisci
-          deleniti quibusdam voluptas! Aliquid vitae officiis repudiandae non,
-          optio ex eum, enim incidunt totam sit atque.
+          With over 2 years of experience in frontend development, I bring a
+          strong foundation in React, Next.js, Tailwind CSS, and TypeScript. I
+          have worked on various projects, collaborating closely with
+          cross-functional teams to deliver exceptional user
+          experiences. Alongside my technical skills, I have a keen eye for
+          design and a deep understanding of user-centric development. My goal
+          is to create seamless digital experiences that leave a lasting
+          impression.
         </p>
         <p className="text-xl mt-8">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-          Perspiciatis, cumque. Incidunt, adipisci. Molestiae soluta illo
-          eveniet cumque in minima nesciunt qui expedita modi veritatis quasi
-          porro vero unde maiores officiis, officia eligendi ipsam, adipisci
-          deleniti quibusdam voluptas! Aliquid vitae officiis repudiandae non,
-          optio ex eum, enim incidunt totam sit atque.
+          Beyond my professional pursuits, I have a zest for exploration and
+          adventure. Whether it's hiking through scenic landscapes or immersing
+          myself in local traditions, I find inspiration in every journey. In my
+          downtime, you'll often find me on the badminton court, honing my
+          skills and engaging in friendly competition. The discipline and focus
+          required in the sport reflect my approach to problem-solving in the
+          technical realm.
         </p>
       </div>
     </div>
