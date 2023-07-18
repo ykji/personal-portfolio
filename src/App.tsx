@@ -1,9 +1,9 @@
 import Home from "./components/Home";
 import About from "./components/About";
+import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
-import TechStack from "./components/TechStack";
 // import Portfolio from "./components/Portfolio";
 import SocialLinks from "./components/SocialLinks";
 
@@ -15,7 +15,7 @@ function App() {
       <SocialLinks hideForMobile={true} />
       <About />
       {/* <Portfolio /> */}
-      <TechStack />
+      <Skills />
       <Contact />
       <Footer />
     </>

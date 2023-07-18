@@ -1,15 +1,16 @@
 import { techs } from "../utility/constants";
 import { FaAngleDoubleDown } from "react-icons/fa";
-const TechStack = () => {
+
+const Skills = () => {
   return (
     <div
-      id="techstack"
-      className="w-full bg-gradient-to-b py-20 from-black to-gray-800 text-white md:h-screen md:pt-32"
+      id="skills"
+      className="w-full bg-gradient-to-b py-20 from-black to-gray-800 text-white md:min-h-screen md:pt-20"
     >
       <div className="max-w-screen-lg flex flex-col justify-center mx-auto h-full p-4">
         <div className="">
           <h2 className="text-4xl border-b-4 border-gray-500 inline">
-            Techstack
+            Skills
           </h2>
           <p className="py-6 flex items-center">
             These are the technologies I've worked with
@@ -18,7 +19,7 @@ const TechStack = () => {
             </span>
           </p>
         </div>
-        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-5 gap-8 text-center py-8 px-12 sm:px-0">
           {techs.map(({ id, src, title, style }) => {
             return (
               <div
@@ -36,4 +37,4 @@ const TechStack = () => {
   );
 };
 
-export default TechStack;
+export default Skills;
