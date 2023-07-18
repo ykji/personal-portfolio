@@ -23,12 +23,12 @@ const Home = () => {
             user experiences through intuitive web applications.
           </p>
           <Link
-            to="portfolio"
+            to="projects"
             smooth
             duration={500}
             className="group text-white px-6 py-3 my-2 flex items-center rounded-md w-fit bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
           >
-            Portfolio
+            Projects
             <span className="group-hover:rotate-90 duration-300">
               <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
             </span>
