@@ -22,7 +22,7 @@ const Projects = () => {
         </div>
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-12 px-12 sm:px-0 mx-auto">
           {projects.map((project) => {
-            return <ProjectCard project={project} />;
+            return <ProjectCard key={project.id} project={project} />;
           })}
         </div>
       </div>
