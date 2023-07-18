@@ -1,5 +1,5 @@
 import { Link } from "react-scroll";
-import HeroImage from "../assets/heroImage.jpg";
+import HeroImage from "../assets/heroImage5.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Home = () => {
@@ -34,7 +34,7 @@ const Home = () => {
         <img
           src={HeroImage}
           alt="yash-face"
-          className="rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-3 md:mt-0"
+          className="rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-3 md:mt-0 hover:scale-105 duration-300"
         />
         <p className="text-3xl md:text-5xl font-semibold block mt-2 text-gray-400 md:hidden">
           {"<YashVarshney />"}
