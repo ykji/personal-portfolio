@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div
       id="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-32 md:pt-0"
+      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-24 md:pt-0"
     >
       <div className="max-w-screen-lg text-center md:text-left mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center items-center md:items-start h-full">
@@ -34,8 +34,11 @@ const Home = () => {
         <img
           src={HeroImage}
           alt="yash-face"
-          className="rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-10 md:mt-0"
+          className="rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-3 md:mt-0"
         />
+        <p className="text-3xl md:text-5xl font-semibold block mt-2 text-gray-400 md:hidden">
+          {"<YashVarshney />"}
+        </p>
       </div>
     </div>
   );
