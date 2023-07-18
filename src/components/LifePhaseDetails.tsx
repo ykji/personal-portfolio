@@ -5,12 +5,12 @@ interface Props {
 }
 
 const LifePhaseDetails = (props: Props) => {
-  const { id, title, start, end, details, role } = props.lifePhase;
+  const { title, start, end, details, role } = props.lifePhase;
 
   const lifePhaseTitle = title + (role ? `/ ${role}` : "");
 
   return (
-    <div key={id} className="relative border-l-2 border-gray-500">
+    <div className="relative border-l-2 border-gray-500">
       <div className="flex items-center top-[-10px] left-[-7px] gap-2 absolute">
         <div className="h-3 w-3 bg-gray-500 rounded-full"></div>
         <p className="text-sm">{end}</p>

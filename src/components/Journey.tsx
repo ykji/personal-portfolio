@@ -15,7 +15,7 @@ const Journey = () => {
         </div>
         <div className="flex flex-col gap-10 text-gray-300">
           {lifePhases.map((lifePhase) => (
-            <LifePhaseDetails lifePhase={lifePhase} />
+            <LifePhaseDetails key={lifePhase.id} lifePhase={lifePhase} />
           ))}
         </div>
       </div>

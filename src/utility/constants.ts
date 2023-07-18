@@ -1,24 +1,26 @@
-import css from "../assets/css.png";
-import cpp from "../assets/cpp.png";
-import html from "../assets/html.png";
-import node from "../assets/node.png";
-import nextjs from "../assets/nextjs.png";
-import github from "../assets/github.png";
-import flutter from "../assets/flutter.png";
-import graphql from "../assets/graphql.png";
-import express from "../assets/express.png";
-import reactImage from "../assets/react.png";
-import tailwind from "../assets/tailwind.png";
+import css from "../assets/skills/css.png";
+import cpp from "../assets/skills/cpp.png";
+import html from "../assets/skills/html.png";
+import node from "../assets/skills/node.png";
+import { Project } from "../interfaces/project";
+import nextjs from "../assets/skills/nextjs.png";
+import github from "../assets/skills/github.png";
 import { NavLink } from "../interfaces/nav-link";
-import typescript from "../assets/typescript.png";
-import javascript from "../assets/javascript.png";
+import flutter from "../assets/skills/flutter.png";
+import graphql from "../assets/skills/graphql.png";
+import express from "../assets/skills/express.png";
 import { Techstack } from "../interfaces/techstack";
+import reactImage from "../assets/skills/react.png";
+import tailwind from "../assets/skills/tailwind.png";
+import typescript from "../assets/skills/typescript.png";
+import javascript from "../assets/skills/javascript.png";
+import portfolio from "../assets/projects/portfolio.png";
 import { LifePhase } from "../interfaces/work-experience";
 
 export const navLinks: NavLink[] = [
   { id: 1, link: "home" },
   { id: 2, link: "about" },
-  { id: 3, link: "portfolio" },
+  { id: 3, link: "projects" },
   { id: 4, link: "journey" },
   { id: 5, link: "skills" },
   { id: 6, link: "contact" },
@@ -240,5 +242,15 @@ export const lifePhases: LifePhase[] = [
         point: "CGPA - 10",
       },
     ],
+  },
+];
+
+export const projects: Project[] = [
+  {
+    id: 1,
+    src: portfolio,
+    name: "Personal Portfolio",
+    demoUrl: "https://developer-portfolio-yash.vercel.app/",
+    codeUrl: "https://github.com/ykji/personal-portfolio",
   },
 ];

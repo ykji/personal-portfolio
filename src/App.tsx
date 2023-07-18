@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import NavBar from "./components/NavBar";
 import Contact from "./components/Contact";
 import Journey from "./components/Journey";
-import Portfolio from "./components/Portfolio";
+import Projects from "./components/Projects";
 import SocialLinks from "./components/SocialLinks";
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Home />
       <SocialLinks hideForMobile={true} />
       <About />
-      <Portfolio />
+      <Projects />
       <Journey />
       <Skills />
       <Contact />
