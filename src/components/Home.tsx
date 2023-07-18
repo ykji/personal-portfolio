@@ -8,12 +8,12 @@ const Home = () => {
       id="home"
       className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-32 md:pt-0"
     >
-      <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
+      <div className="max-w-screen-lg text-center md:text-left mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center items-center md:items-start h-full">
           <h2 className="text-4xl sm:text-7xl text-white font-bold">
-            I'm a Frontend Developer
+            You can call me a Frontend Developer!
           </h2>
-          <p className="text-gray-500 max-w-md py-6">
+          <p className="text-gray-500 max-w-md py-6 px-6 md:px-0">
             2 years experienced Frontend Developer adept in React, Next.js,
             Tailwind CSS, and TypeScript. Expertise in crafting responsive and
             dynamic user interfaces. Passionate about delivering exceptional
