@@ -4,23 +4,31 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { SocialLink } from "../interfaces/social-link";
 import { BsFillPersonLinesFill, BsInstagram } from "react-icons/bs";
 
-const SocialLinks = () => {
+type Props = {
+  hideForMobile: boolean;
+};
+
+const SocialLinks = (props: Props) => {
+  const { hideForMobile } = props;
+  const style = hideForMobile
+    ? "hidden lg:flex fixed z-10"
+    : "flex lg:hidden absolute z-8";
+
   const socialLinks: SocialLink[] = [
     {
       id: 1,
       child: (
         <>
-          LinkedIn <FaLinkedin size={30} />
+          LinkedIn <FaLinkedin size={25} />
         </>
       ),
       href: "https://www.linkedin.com/in/yash-varshney/",
-      style: "rounded-tr-md",
     },
     {
       id: 2,
       child: (
         <>
-          GitHub <FaGithub size={30} />
+          GitHub <FaGithub size={25} />
         </>
       ),
       href: "https://github.com/ykji",
@@ -29,7 +37,7 @@ const SocialLinks = () => {
       id: 3,
       child: (
         <>
-          Mail <HiOutlineMail size={30} />
+          Mail <HiOutlineMail size={25} />
         </>
       ),
       href: "mailto:yvarshney44@gmail.com",
@@ -38,7 +46,7 @@ const SocialLinks = () => {
       id: 4,
       child: (
         <>
-          Codeforces <SiCodeforces size={30} />
+          Codeforces <SiCodeforces size={25} />
         </>
       ),
       href: "https://codeforces.com/profile/__ykji",
@@ -47,7 +55,7 @@ const SocialLinks = () => {
       id: 5,
       child: (
         <>
-          Instagram <BsInstagram size={30} />
+          Instagram <BsInstagram size={25} />
         </>
       ),
       href: "https://instagram.com/___whykay?igshid=OGQ5ZDc2ODk2ZA==",
@@ -56,23 +64,20 @@ const SocialLinks = () => {
       id: 6,
       child: (
         <>
-          Resume <BsFillPersonLinesFill size={30} />
+          Resume <BsFillPersonLinesFill size={25} />
         </>
       ),
       href: "https://drive.google.com/drive/folders/1vjO0slQ8vqc1HbXGA1hDcdBIWf6WCfJm?usp=sharing",
-      style: "rounded-br-md",
     },
   ];
 
   return (
-    <ul className="hidden lg:flex flex-col top-[35%] fixed left-0 ">
-      {socialLinks.map(({ id, child, href, style }) => (
+    <ul className={`${style} flex-col top-[35%] left-0`}>
+      {socialLinks.map(({ id, child, href }) => (
         <li
           key={id}
           className={
-            "flex bg-gray-500 w-40 h-14 px-4 ml-[-102px] hover:rounded-md hover:ml-[-10px] duration-300" +
-            " " +
-            style
+            "flex font-semibold bg-transparent w-40 h-14 px-4 ml-[-106px] lg:hover:ml-[-10px] hover:rounded-md hover:bg-gray-400 duration-300"
           }
         >
           <a

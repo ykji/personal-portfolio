@@ -1,3 +1,4 @@
+import SocialLinks from "./SocialLinks";
 import { useEffect, useState } from "react";
 import { FaAngleDoubleDown } from "react-icons/fa";
 
@@ -17,7 +18,7 @@ const Contact = () => {
   return (
     <div
       id="contact"
-      className="w-full bg-gradient-to-b py-10 from-gray-800 to-black text-white md:h-screen pt-32"
+      className="w-full bg-gradient-to-b py-10 from-gray-800 to-black text-white md:h-screen pt-32 relative z-7"
     >
       <div className="max-w-screen-lg flex flex-col justify-center mx-auto h-full p-4">
         <div className="pb-8">
@@ -71,6 +72,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      <SocialLinks hideForMobile={false} />
     </div>
   );
 };

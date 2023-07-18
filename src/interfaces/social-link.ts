@@ -1,8 +1,5 @@
-import { ReactNode } from "react";
-
 export interface SocialLink {
   id: number;
-  child: ReactNode;
+  child: JSX.Element;
   href: string;
-  style?: string;
 }
