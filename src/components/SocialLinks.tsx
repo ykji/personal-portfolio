@@ -61,7 +61,7 @@ const SocialLinks = () => {
         <li
           key={id}
           className={
-            "flex bg-gray-500 w-40 h-14 px-4 ml-[-102px] hover:rounded-md hover:ml-[-10px] duration-200" +
+            "flex bg-gray-500 w-40 h-14 px-4 ml-[-102px] hover:rounded-md hover:ml-[-10px] duration-300" +
             " " +
             style
           }

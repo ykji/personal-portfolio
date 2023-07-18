@@ -14,7 +14,10 @@ const Contact = () => {
   }, [email, name, message]);
 
   return (
-    <div id="contact" className="w-full bg-gradient-to-b py-10 from-gray-800 to-black text-white md:h-screen pt-32">
+    <div
+      id="contact"
+      className="w-full bg-gradient-to-b py-10 from-gray-800 to-black text-white md:h-screen pt-32"
+    >
       <div className="max-w-screen-lg flex flex-col justify-center mx-auto h-full p-4">
         <div className="pb-8">
           <h2 className="text-4xl border-b-4 border-gray-500 inline">
@@ -34,7 +37,7 @@ const Contact = () => {
               name="name"
               placeholder="Enter your name"
               onChange={(e) => setName(e.target.value)}
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-gray-300 border-gray-400 focus:outline-none"
             />
             <input
               required
@@ -42,7 +45,7 @@ const Contact = () => {
               name="email"
               placeholder="Enter your email"
               onChange={(e) => setEmail(e.target.value)}
-              className="my-4 p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="my-4 p-2 bg-transparent border-2 rounded-md text-gray-300 border-gray-400 focus:outline-none"
             />
             <textarea
               required
@@ -50,7 +53,7 @@ const Contact = () => {
               name="message"
               placeholder="Enter your message"
               onChange={(e) => setMessage(e.target.value)}
-              className="p-2 bg-transparent border-2 rounded-md text-white focus:outline-none"
+              className="p-2 bg-transparent border-2 rounded-md text-gray-300 border-gray-400 focus:outline-none"
             ></textarea>
 
             <button
