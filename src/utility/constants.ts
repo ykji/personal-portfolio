@@ -198,8 +198,8 @@ export const lifePhases: LifePhase[] = [
   {
     id: 3,
     title: "Btech - CSE",
-    start: "2022",
-    end: "2018",
+    start: "2018",
+    end: "2022",
     details: [
       {
         id: 0,
