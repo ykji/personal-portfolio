@@ -12,7 +12,7 @@ const ProjectCard = (props: Props) => {
       <img
         src={src}
         alt={name}
-        className="rounded-md hover:scale-105 duration-200 object-cover"
+        className="rounded-md lg:hover:scale-105 duration-200 object-cover"
       />
       <p className="text-center py-1 border-b-2 border-gray-600">{name}</p>
       <div className="flex justify-around items-center">

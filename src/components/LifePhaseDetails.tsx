@@ -15,7 +15,7 @@ const LifePhaseDetails = (props: Props) => {
         <div className="h-3 w-3 bg-gray-500 rounded-full"></div>
         <p className="text-sm">{end}</p>
       </div>
-      <div className="mx-10 my-6 shadow-md shadow-blue-500 rounded-md p-5 flex flex-col md:hover:scale-105 duration-300">
+      <div className="mx-10 my-6 shadow-md shadow-blue-500 rounded-md p-5 flex flex-col lg:hover:scale-105 duration-300">
         <h3 className="text-xl font-bold">{lifePhaseTitle}</h3>
         <ul className="px-6 mt-2 text-sm">
           {details.map(({ id, point }) => (

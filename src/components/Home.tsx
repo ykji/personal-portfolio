@@ -34,7 +34,7 @@ const Home = () => {
             </span>
           </Link>
         </div>
-        <div className="rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-3 md:mt-0 hover:scale-105 duration-300 relative">
+        <div className="rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-3 md:mt-0 lg:hover:scale-105 duration-300 relative">
           <img src={HeroImage} alt="yash-face" className="rounded-2xl" />
           <div className="h-1/2 bottom-0 left-0 w-full rounded-b-xl bg-gradient-to-b from-transparent to-black absolute z-2 text-white"></div>
         </div>
