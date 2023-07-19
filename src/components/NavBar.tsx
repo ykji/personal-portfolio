@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-scroll";
-import { navLinks } from "../utility/constants";
 import ykLogo from "../assets/ykLogo.png";
+import { navLinks } from "../utility/constants";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function NavBar() {
@@ -10,7 +10,9 @@ function NavBar() {
   return (
     <div className="flex justify-between items-center px-4 text-white bg-black fixed w-full h-20 z-10">
       <div className="flex items-center gap-2 md:gap-5">
-        <img src={ykLogo} alt="logo" className="h-12 md:h-16" />
+        <Link to="home" smooth duration={500} className="cursor-pointer">
+          <img src={ykLogo} alt="logo" className="h-12 md:h-16" />
+        </Link>
         <h1 className="text-3xl md:text-5xl font-semibold hidden md:block">
           {"<YashVarshney />"}
         </h1>

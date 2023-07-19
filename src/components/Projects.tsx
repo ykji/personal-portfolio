@@ -1,6 +1,6 @@
+import ProjectCard from "./ProjectCard";
 import { projects } from "../utility/constants";
 import { FaAngleDoubleDown } from "react-icons/fa";
-import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   return (
