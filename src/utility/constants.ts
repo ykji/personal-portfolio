@@ -15,6 +15,7 @@ import tailwind from "../assets/skills/tailwind.png";
 import typescript from "../assets/skills/typescript.png";
 import javascript from "../assets/skills/javascript.png";
 import portfolio from "../assets/projects/portfolio.png";
+import nextjsAuth from "../assets/projects/nextjs-auth.png";
 import { LifePhase } from "../interfaces/work-experience";
 
 export const navLinks: NavLink[] = [
@@ -247,10 +248,17 @@ export const lifePhases: LifePhase[] = [
 
 export const projects: Project[] = [
   {
-    id: 1,
+    id: 0,
     src: portfolio,
     name: "Personal Portfolio",
     demoUrl: "https://developer-portfolio-yash.vercel.app/",
     codeUrl: "https://github.com/ykji/personal-portfolio",
+  },
+  {
+    id: 1,
+    src: nextjsAuth,
+    name: "Next.js Auth",
+    demoUrl: "https://nextjs-auth-gules.vercel.app",
+    codeUrl: "https://github.com/ykji/nextjs-auth",
   },
 ];
