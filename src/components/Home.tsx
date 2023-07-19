@@ -34,12 +34,11 @@ const Home = () => {
             </span>
           </Link>
         </div>
-        <img
-          src={HeroImage}
-          alt="yash-face"
-          className="rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-3 md:mt-0 hover:scale-105 duration-300"
-        />
-        <p className="text-3xl md:text-5xl font-semibold block mt-2 text-gray-400 md:hidden">
+        <div className="rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-3 md:mt-0 hover:scale-105 duration-300 relative">
+          <img src={HeroImage} alt="yash-face" className="rounded-2xl" />
+          <div className="h-1/2 bottom-0 left-0 w-full rounded-b-xl bg-gradient-to-b from-transparent to-black absolute z-2 text-white"></div>
+        </div>
+        <p className="text-3xl md:text-5xl font-semibold block mt-4 text-gray-400 md:hidden">
           {"<YashVarshney />"}
         </p>
       </div>
