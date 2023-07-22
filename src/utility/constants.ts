@@ -1,7 +1,9 @@
 import css from "../assets/skills/css.png";
 import cpp from "../assets/skills/cpp.png";
+import rtl from "../assets/skills/rtl.png";
 import html from "../assets/skills/html.png";
 import node from "../assets/skills/node.png";
+import jest from "../assets/skills/jest.png";
 import { Project } from "../interfaces/project";
 import nextjs from "../assets/skills/nextjs.png";
 import github from "../assets/skills/github.png";
@@ -33,7 +35,7 @@ export const techs: Techstack[] = [
     id: 4,
     src: reactImage,
     title: "React",
-    style: "shadow-blue-600",
+    style: "shadow-[#00D8FE]",
   },
   {
     id: 6,
@@ -45,13 +47,13 @@ export const techs: Techstack[] = [
     id: 11,
     src: typescript,
     title: "Typescript",
-    style: "shadow-blue-300",
+    style: "shadow-[#2D79C7]",
   },
   {
     id: 3,
     src: javascript,
     title: "JavaScript",
-    style: "shadow-yellow-500",
+    style: "shadow-[#FFD600]",
   },
   {
     id: 1,
@@ -72,6 +74,18 @@ export const techs: Techstack[] = [
     style: "shadow-sky-400",
   },
   {
+    id: 14,
+    src: jest,
+    title: "Jest",
+    style: "shadow-[#a0444c]",
+  },
+  {
+    id: 10,
+    src: rtl,
+    title: "React Testing Library",
+    style: "shadow-[#EF3C3B]",
+  },
+  {
     id: 12,
     src: flutter,
     title: "Flutter",
@@ -81,7 +95,7 @@ export const techs: Techstack[] = [
     id: 13,
     src: cpp,
     title: "C++",
-    style: "shadow-cyan-300",
+    style: "shadow-[#659BD3]",
   },
   {
     id: 7,
@@ -93,7 +107,7 @@ export const techs: Techstack[] = [
     id: 8,
     src: node,
     title: "Node.js",
-    style: "shadow-green-400",
+    style: "shadow-[#90cc4c]",
   },
   {
     id: 9,
