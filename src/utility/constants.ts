@@ -12,11 +12,12 @@ import express from "../assets/skills/express.png";
 import { Techstack } from "../interfaces/techstack";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
+import photoApp from "../assets/projects/photo-app.png";
 import typescript from "../assets/skills/typescript.png";
 import javascript from "../assets/skills/javascript.png";
 import portfolio from "../assets/projects/portfolio.png";
-import nextjsAuth from "../assets/projects/nextjs-auth.png";
 import { LifePhase } from "../interfaces/work-experience";
+import nextjsAuth from "../assets/projects/nextjs-auth.png";
 
 export const navLinks: NavLink[] = [
   { id: 1, link: "home" },
@@ -261,4 +262,12 @@ export const projects: Project[] = [
     demoUrl: "https://nextjs-auth-gules.vercel.app",
     codeUrl: "https://github.com/ykji/nextjs-auth",
   },
+  // {
+  //   id: 2,
+  //   src: photoApp,
+  //   name: "Rick Morty Gallery",
+  //   demoUrl:
+  //     "https://drive.google.com/drive/u/2/folders/114y0xW_qZ_FGOI89kRSOXPLSEb1nJV0t",
+  //   codeUrl: "https://github.com/ykji/photo-app",
+  // },
 ];
