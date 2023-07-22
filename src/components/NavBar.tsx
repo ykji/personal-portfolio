@@ -22,7 +22,7 @@ function NavBar() {
         {navLinks.map(({ id, link }) => (
           <li
             key={id}
-            className="cursor-pointer font-medium capitalize hover:scale-105 duration-200 text-gray-500 px-4"
+            className="cursor-pointer font-medium hover:font-bold capitalize hover:scale-110 duration-200 text-gray-500 px-4"
           >
             <Link to={link} smooth duration={500}>
               {link}
