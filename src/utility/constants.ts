@@ -15,6 +15,7 @@ import { Techstack } from "../interfaces/techstack";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
 import photoApp from "../assets/projects/photo-app.png";
+import timelessLens from "../assets/projects/timelesslens.png";
 import typescript from "../assets/skills/typescript.png";
 import javascript from "../assets/skills/javascript.png";
 import portfolio from "../assets/projects/portfolio.png";
@@ -280,7 +281,7 @@ export const projects: Project[] = [
   {
     id: 0,
     src: portfolio,
-    name: "Personal Portfolio",
+    name: "Personal Portfolio (React)",
     demoUrl: "https://developer-portfolio-yash.vercel.app/",
     codeUrl: "https://github.com/ykji/personal-portfolio",
   },
@@ -290,6 +291,13 @@ export const projects: Project[] = [
     name: "Next.js Auth",
     demoUrl: "https://nextjs-auth-gules.vercel.app",
     codeUrl: "https://github.com/ykji/nextjs-auth",
+  },
+  {
+    id: 3,
+    src: timelessLens,
+    name: "Timeless Lens (Next.js, mongodb)",
+    demoUrl: "https://timeless-lens.vercel.app/",
+    codeUrl: "https://github.com/ykji/timeless-lens",
   },
   // {
   //   id: 2,
