@@ -1,11 +1,19 @@
-import { useState } from "react";
 import { Link } from "react-scroll";
 import ykLogo from "../assets/ykLogo.png";
+import { useEffect, useState } from "react";
 import { navLinks } from "../utility/constants";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 function NavBar() {
   const [nav, setNav] = useState(false);
+
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "unset";
+    }
+  }, [nav]);
 
   return (
     <div className="flex justify-between items-center px-4 text-white bg-black fixed w-full h-20 z-10">
