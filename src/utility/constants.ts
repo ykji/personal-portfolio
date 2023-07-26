@@ -15,12 +15,13 @@ import { Techstack } from "../interfaces/techstack";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
 import photoApp from "../assets/projects/photo-app.png";
-import timelessLens from "../assets/projects/timelesslens.png";
 import typescript from "../assets/skills/typescript.png";
 import javascript from "../assets/skills/javascript.png";
 import portfolio from "../assets/projects/portfolio.png";
 import { LifePhase } from "../interfaces/work-experience";
+import animations from "../assets/projects/animations.png";
 import nextjsAuth from "../assets/projects/nextjs-auth.png";
+import timelessLens from "../assets/projects/timelesslens.png";
 
 export const navLinks: NavLink[] = [
   { id: 1, link: "home" },
@@ -286,11 +287,11 @@ export const projects: Project[] = [
     codeUrl: "https://github.com/ykji/personal-portfolio",
   },
   {
-    id: 1,
-    src: nextjsAuth,
-    name: "Next.js Auth",
-    demoUrl: "https://nextjs-auth-gules.vercel.app",
-    codeUrl: "https://github.com/ykji/nextjs-auth",
+    id: 4,
+    src: animations,
+    name: "Cool Animations (CSS)",
+    demoUrl: "https://animations-seven-pi.vercel.app/",
+    codeUrl: "https://github.com/ykji/cool-animations",
   },
   {
     id: 3,
@@ -298,6 +299,13 @@ export const projects: Project[] = [
     name: "Timeless Lens (Next.js, mongodb)",
     demoUrl: "https://timeless-lens.vercel.app/",
     codeUrl: "https://github.com/ykji/timeless-lens",
+  },
+  {
+    id: 1,
+    src: nextjsAuth,
+    name: "Next.js Auth",
+    demoUrl: "https://nextjs-auth-gules.vercel.app",
+    codeUrl: "https://github.com/ykji/nextjs-auth",
   },
   // {
   //   id: 2,
