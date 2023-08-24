@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { LifePhase } from "../interfaces/work-experience";
+import { BiDownArrowCircle, BiUpArrowCircle } from "react-icons/bi";
 
 interface Props {
   lifePhase: LifePhase;
@@ -21,24 +22,32 @@ const LifePhaseDetails = (props: Props) => {
         <div>
           <h3 className="text-xl font-bold">{lifePhaseTitle}</h3>
         </div>
-        {showDetails && (
-          <ul
-            className={`max-h-0 overflow-hidden transition-max-height ${
-              showDetails ? "max-h-screen" : ""
-            } px-6 mt-2 text-sm duration-300`}
-          >
-            {details.map(({ id, point }) => (
-              <li key={id} className="list-decimal leading-6">
-                {point}
-              </li>
-            ))}
-          </ul>
-        )}
+        <ul
+          className={`${
+            showDetails ? "right-0" : "-right-[1000px] opacity-0 h-0"
+          } px-6 mt-2 text-sm duration-500 relative`}
+        >
+          {details.map(({ id, point }) => (
+            <li key={id} className="list-decimal leading-6">
+              {point}
+            </li>
+          ))}
+        </ul>
         <button
           className="mt-3 font-semibold"
           onClick={() => setShowDetails(!showDetails)}
         >
-          {showDetails ? "Hide Details ⬆️" : "Show Details ⬇️"}
+          {showDetails ? (
+            <div className="flex items-center gap-2">
+              Hide Details
+              <BiUpArrowCircle size={25} />
+            </div>
+          ) : (
+            <div className="flex items-center gap-2">
+              Show Details
+              <BiDownArrowCircle size={25} />
+            </div>
+          )}
         </button>
       </div>
       <div className="flex items-center bottom-[-10px] left-[-7px] gap-2 absolute">
