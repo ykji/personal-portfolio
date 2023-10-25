@@ -1,24 +1,27 @@
+import { Project } from "../interfaces/project";
+import { NavLink } from "../interfaces/nav-link";
+import { Techstack } from "../interfaces/techstack";
+import { LifePhase } from "../interfaces/work-experience";
+
 import css from "../assets/skills/css.png";
 import cpp from "../assets/skills/cpp.png";
 import rtl from "../assets/skills/rtl.png";
 import html from "../assets/skills/html.png";
 import node from "../assets/skills/node.png";
 import jest from "../assets/skills/jest.png";
-import { Project } from "../interfaces/project";
 import nextjs from "../assets/skills/nextjs.png";
 import github from "../assets/skills/github.png";
-import { NavLink } from "../interfaces/nav-link";
 import flutter from "../assets/skills/flutter.png";
 import graphql from "../assets/skills/graphql.png";
 import express from "../assets/skills/express.png";
-import { Techstack } from "../interfaces/techstack";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
-import photoApp from "../assets/projects/photo-app.png";
+// import photoApp from "../assets/projects/photo-app.png";
 import typescript from "../assets/skills/typescript.png";
 import javascript from "../assets/skills/javascript.png";
+
+import drawpad from "../assets/projects/drawpad.png";
 import portfolio from "../assets/projects/portfolio.png";
-import { LifePhase } from "../interfaces/work-experience";
 import animations from "../assets/projects/animations.png";
 import nextjsAuth from "../assets/projects/nextjs-auth.png";
 import timelessLens from "../assets/projects/timelesslens.png";
@@ -150,38 +153,31 @@ export const lifePhases: LifePhase[] = [
     details: [
       {
         id: 0,
-        point:
-          "Worked for InCare product. InCare is developed for care manager persona in the healthcare supply chain ecosystem.",
+        point: "Worked for InCare product. InCare is developed for care manager persona in the healthcare supply chain ecosystem.",
       },
       {
         id: 1,
-        point:
-          "Built high-quality, clean, scalable and reusable code with React, Redux, Javascript and Typescript.",
+        point: "Built high-quality, clean, scalable and reusable code with React, Redux, Javascript and Typescript.",
       },
       {
         id: 2,
-        point:
-          "Involved in developing unit and end-to-end tests and increasing module coverage to 95% using Jest and Cypress.",
+        point: "Involved in developing unit and end-to-end tests and increasing module coverage to 95% using Jest and Cypress.",
       },
       {
         id: 3,
-        point:
-          "Handled analytics to measure user engagement and retention using Mixpanel.",
+        point: "Handled analytics to measure user engagement and retention using Mixpanel.",
       },
       {
         id: 4,
-        point:
-          "Performed refactoring of code thereby delivering continuous improvement and enhancing the existing product suite.",
+        point: "Performed refactoring of code thereby delivering continuous improvement and enhancing the existing product suite.",
       },
       {
         id: 5,
-        point:
-          "Improved page speed and reduced latency by designing a smaller response payload and executing APIs in batches.",
+        point: "Improved page speed and reduced latency by designing a smaller response payload and executing APIs in batches.",
       },
       {
         id: 6,
-        point:
-          "Worked closely with the Product Owners and Designers for the requirements and own the code from implementation.",
+        point: "Worked closely with the Product Owners and Designers for the requirements and own the code from implementation.",
       },
       { id: 7, point: "Reviewing code for Interns and Associates" },
     ],
@@ -199,13 +195,11 @@ export const lifePhases: LifePhase[] = [
       },
       {
         id: 1,
-        point:
-          "Completed UI Development and Backend Integration of the application.",
+        point: "Completed UI Development and Backend Integration of the application.",
       },
       {
         id: 2,
-        point:
-          "Exploited Local Storage in the application using Hive NoSQL database.",
+        point: "Exploited Local Storage in the application using Hive NoSQL database.",
       },
     ],
   },
@@ -218,13 +212,11 @@ export const lifePhases: LifePhase[] = [
     details: [
       {
         id: 0,
-        point:
-          "Lead the End-to-end product strategy and Wireframing for MVP of a social media platform.",
+        point: "Lead the End-to-end product strategy and Wireframing for MVP of a social media platform.",
       },
       {
         id: 1,
-        point:
-          "Independently worked on the UI Development and Backend Integration of the MVP using Flutter, Provider, Dart.",
+        point: "Independently worked on the UI Development and Backend Integration of the MVP using Flutter, Provider, Dart.",
       },
     ],
   },
@@ -279,6 +271,13 @@ export const lifePhases: LifePhase[] = [
 ];
 
 export const projects: Project[] = [
+  {
+    id: 5,
+    src: drawpad,
+    name: "Drawpad",
+    demoUrl: "https://drawpad-lovat.vercel.app",
+    codeUrl: "https://github.com/ykji/drawpad",
+  },
   {
     id: 0,
     src: portfolio,
