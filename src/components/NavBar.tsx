@@ -16,7 +16,7 @@ function NavBar() {
   }, [nav]);
 
   return (
-    <div className="flex justify-between items-center px-4 text-white bg-black fixed w-full h-20 z-10">
+    <div className="flex justify-between items-center px-4 text-white bg-black fixed w-screen h-20 z-10">
       <div className="flex items-center gap-2 md:gap-5">
         <Link to="home" smooth duration={500} className="cursor-pointer">
           <img src={ykLogo} alt="logo" className="h-12 md:h-16" />
