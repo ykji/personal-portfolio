@@ -145,11 +145,19 @@ export const techs: Techstack[] = [
 
 export const lifePhases: LifePhase[] = [
   {
+    id: 6,
+    title: "JULO",
+    role: "Software Engineer",
+    start: "Aug, 2023",
+    end: "Present",
+    details: [],
+  },
+  {
     id: 0,
     title: "Innovaccer",
     role: "SDE-1 Frontend",
     start: "Feb, 2022",
-    end: "Present",
+    end: "Jul, 2023",
     details: [
       {
         id: 0,

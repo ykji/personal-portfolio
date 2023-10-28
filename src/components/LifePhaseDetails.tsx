@@ -22,33 +22,28 @@ const LifePhaseDetails = (props: Props) => {
         <div>
           <h3 className="text-xl font-bold">{lifePhaseTitle}</h3>
         </div>
-        <ul
-          className={`${
-            showDetails ? "right-0" : "-right-[1000px] opacity-0 h-0"
-          } px-6 mt-2 text-sm duration-500 relative`}
-        >
+        <ul className={`${showDetails ? "right-0" : "-right-[1000px] opacity-0 h-0"} px-6 mt-2 text-sm duration-500 relative`}>
           {details.map(({ id, point }) => (
             <li key={id} className="list-decimal leading-6">
               {point}
             </li>
           ))}
         </ul>
-        <button
-          className="mt-3 font-semibold"
-          onClick={() => setShowDetails(!showDetails)}
-        >
-          {showDetails ? (
-            <div className="flex items-center gap-2">
-              Hide Details
-              <BiUpArrowCircle size={25} />
-            </div>
-          ) : (
-            <div className="flex items-center gap-2">
-              Show Details
-              <BiDownArrowCircle size={25} />
-            </div>
-          )}
-        </button>
+        {details.length > 0 && (
+          <button className="mt-3 font-semibold" onClick={() => setShowDetails(!showDetails)}>
+            {showDetails ? (
+              <div className="flex items-center gap-2">
+                Hide Details
+                <BiUpArrowCircle size={25} />
+              </div>
+            ) : (
+              <div className="flex items-center gap-2">
+                Show Details
+                <BiDownArrowCircle size={25} />
+              </div>
+            )}
+          </button>
+        )}
       </div>
       <div className="flex items-center bottom-[-10px] left-[-7px] gap-2 absolute">
         <div className="h-3 w-3 bg-gray-500 rounded-full"></div>
