@@ -1,6 +1,6 @@
 # My Developer Portfolio
 
-![Portfolio Preview](src/assets/projects/portfolio.png)
+![Portfolio Preview](./src/assets/projects/portfolio.png)
 
 ## Introduction
 
