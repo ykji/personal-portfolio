@@ -17,6 +17,7 @@ import express from "../assets/skills/express.png";
 import reactImage from "../assets/skills/react.png";
 import tailwind from "../assets/skills/tailwind.png";
 // import photoApp from "../assets/projects/photo-app.png";
+import shery from "../assets/projects/shery.png";
 import typescript from "../assets/skills/typescript.png";
 import javascript from "../assets/skills/javascript.png";
 
@@ -286,12 +287,20 @@ export const projects: Project[] = [
     demoUrl: "https://drawpad-lovat.vercel.app",
     codeUrl: "https://github.com/ykji/drawpad",
   },
+
   {
     id: 0,
     src: portfolio,
     name: "Personal Portfolio (React)",
     demoUrl: "https://developer-portfolio-yash.vercel.app/",
     codeUrl: "https://github.com/ykji/personal-portfolio",
+  },
+  {
+    id: 6,
+    src: shery,
+    name: "Shery Animations (Vannila)",
+    demoUrl: "https://shery-animations.vercel.app/",
+    codeUrl: "https://github.com/ykji/shery-animations",
   },
   {
     id: 4,
