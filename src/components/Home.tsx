@@ -1,7 +1,10 @@
-import { Link } from "react-scroll";
-import HeroImage from "../assets/heroImage.jpg";
-import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { useEffect } from "react";
+import { Link } from "react-scroll";
+
+import ReactGA from "react-ga4";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
+import HeroImage from "../assets/heroImage.jpg";
 
 const frontendText = "You can call me a Frontend Developer!";
 
@@ -26,7 +29,24 @@ const Home = () => {
             2 years experienced Frontend Developer adept in React, Next.js, Tailwind CSS, and TypeScript. Expertise in crafting responsive and dynamic user interfaces. Passionate about delivering
             exceptional user experiences through intuitive web applications.
           </p>
-          <Link to="projects" smooth duration={500} className="group text-white px-6 py-3 my-2 flex items-center rounded-md w-fit bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer">
+          <Link
+            to="projects"
+            smooth
+            onClick={() => {
+              console.log("projects clicked");
+              ReactGA.event(
+                {
+                  category: "projects",
+                  action: "scroll_to_projects",
+                },
+                {
+                  click_source: "home",
+                }
+              );
+            }}
+            duration={500}
+            className="group text-white px-6 py-3 my-2 flex items-center rounded-md w-fit bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer"
+          >
             Projects
             <span className="group-hover:rotate-90 duration-300">
               <MdOutlineKeyboardArrowRight size={25} className="ml-1" />
