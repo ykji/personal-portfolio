@@ -20,7 +20,7 @@ const LifePhaseDetails = (props: Props) => {
         <div className='h-3 w-3 bg-gray-500 rounded-full'></div>
         <p className='text-sm'>{end}</p>
       </div>
-      <div className='mx-10 my-6 shadow-md shadow-blue-500 rounded-md p-5 flex flex-col items-start'>
+      <div className='mx-10 my-6 shadow-md shadow-blue-500 rounded-md p-5 flex flex-col items-start overflow-hidden'>
         <div>
           <h3 className='text-xl font-bold'>{lifePhaseTitle}</h3>
         </div>
