@@ -1,5 +1,6 @@
-import SocialLinks from "./SocialLinks";
 import { FaAngleDoubleDown } from "react-icons/fa";
+
+import SocialLinks from "./SocialLinks";
 
 const Contact = () => {
   return (

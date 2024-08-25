@@ -1,4 +1,5 @@
 import LifePhaseDetails from "./LifePhaseDetails";
+
 import { lifePhases } from "../utility/constants";
 
 const Journey = () => {
