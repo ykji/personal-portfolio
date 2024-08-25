@@ -1,5 +1,6 @@
-import { techs } from "../utility/constants";
 import { FaAngleDoubleDown } from "react-icons/fa";
+
+import { techs } from "../utility/constants";
 
 const Skills = () => {
   return (
