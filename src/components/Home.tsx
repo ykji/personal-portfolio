@@ -1,6 +1,5 @@
 import { useEffect } from 'react';
 
-import { Link } from 'react-scroll';
 import { MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
 import HeroImage from '../assets/heroImage.jpg';
@@ -30,12 +29,17 @@ const Home = () => {
             2 years experienced Frontend Developer adept in React, Next.js, Tailwind CSS, and TypeScript. Expertise in crafting responsive and dynamic user interfaces. Passionate about delivering
             exceptional user experiences through intuitive web applications.
           </p>
-          <Link to='projects' smooth duration={500} className='group text-white px-6 py-3 my-2 flex items-center rounded-md w-fit bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'>
-            Projects
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://drive.google.com/drive/folders/1vjO0slQ8vqc1HbXGA1hDcdBIWf6WCfJm?usp=sharing'
+            className='group text-white px-6 py-3 my-2 flex items-center rounded-md w-fit bg-gradient-to-r from-cyan-500 to-blue-500 cursor-pointer'
+          >
+            Resume
             <span className='group-hover:rotate-90 duration-300'>
               <MdOutlineKeyboardArrowRight size={25} className='ml-1' />
             </span>
-          </Link>
+          </a>
         </div>
         <div className='group rounded-2xl mx-auto w-2/3 md:w-full max-w-xs mt-3 md:mt-0 lg:hover:scale-105 duration-300 relative'>
           <img src={HeroImage} alt='yash-face' className='rounded-2xl' />
