@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 
 import { BiDownArrowCircle, BiUpArrowCircle } from 'react-icons/bi';
 
@@ -9,10 +9,24 @@ interface Props {
 }
 
 const LifePhaseDetails = (props: Props) => {
+  const sectionRef = useRef<HTMLDivElement>(null);
   const [showDetails, setShowDetails] = useState(false);
   const { title, start, end, details, role } = props.lifePhase;
 
   const lifePhaseTitle = title + (role ? `/ ${role}` : '');
+
+  const toggleDetails = () => {
+    setShowDetails(!showDetails);
+
+    if (sectionRef.current) {
+      const topOffset = sectionRef.current.getBoundingClientRect().top + window.pageYOffset - window.innerHeight * 0.2;
+
+      window.scrollTo({
+        top: topOffset,
+        behavior: 'smooth',
+      });
+    }
+  };
 
   return (
     <div className='relative border-l-2 border-gray-500'>
@@ -21,10 +35,10 @@ const LifePhaseDetails = (props: Props) => {
         <p className='text-sm'>{end}</p>
       </div>
       <div className='mx-10 my-6 shadow-md shadow-blue-500 rounded-md p-5 flex flex-col items-start overflow-hidden'>
-        <div>
-          <h3 className='text-xl font-bold'>{lifePhaseTitle}</h3>
+        <div ref={sectionRef}>
+          <h3 className={'text-xl font-bold'}>{lifePhaseTitle}</h3>
         </div>
-        <ul className={`${showDetails ? 'right-0' : '-right-[1000px] opacity-0 h-0'} px-6 mt-2 text-sm duration-500 relative`}>
+        <ul className={`${showDetails ? 'right-0' : '-right-[1000px] opacity-0 h-0'} px-3 md:px-6 mt-2 text-sm duration-500 relative`}>
           {details.map(({ id, point }) => (
             <li key={id} className='list-decimal leading-6'>
               {point}
@@ -32,7 +46,7 @@ const LifePhaseDetails = (props: Props) => {
           ))}
         </ul>
         {details.length > 0 && (
-          <button className='mt-3 font-semibold' onClick={() => setShowDetails(!showDetails)}>
+          <button className='mt-3 font-semibold' onClick={toggleDetails}>
             {showDetails ? (
               <div className='flex items-center gap-2'>
                 Hide Details
