@@ -3,7 +3,7 @@ import HeroImage from './HeroImage';
 import FrontendText from './FrontendText';
 import ResumeButton from './ResumeButton';
 
-const Home = () => {
+const Hero = () => {
   return (
     <div id='home' className='md:h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-24 md:pt-0'>
       <div className='max-w-screen-lg text-center md:text-left mx-auto md:flex flex-col items-center justify-center h-full px-4 md:px-16 lg:px-4 md:flex-row md:gap-4'>
@@ -25,4 +25,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Hero;
