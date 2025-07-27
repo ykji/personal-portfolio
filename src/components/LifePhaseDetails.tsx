@@ -13,7 +13,7 @@ const LifePhaseDetails = (props: Props) => {
   const [showDetails, setShowDetails] = useState(false);
   const { title, start, end, details, role } = props.lifePhase;
 
-  const lifePhaseTitle = title + (role ? `/ ${role}` : '');
+  const lifePhaseTitle = (role ? `${role} @ ` : '') + title;
 
   const toggleDetails = () => {
     setShowDetails(!showDetails);

@@ -146,42 +146,56 @@ export const techs: Techstack[] = [
 
 export const lifePhases: LifePhase[] = [
   {
+    id: 7,
+    title: 'Wheelseye',
+    role: 'Software Engineer',
+    start: 'July, 2025',
+    end: 'Present',
+    details: [],
+  },
+  {
     id: 6,
     title: 'JULO',
     role: 'Software Engineer',
     start: 'Aug, 2023',
-    end: 'Present',
+    end: 'July, 2025',
     details: [
       {
         id: 1,
         point:
-          'Headed the development of Julo Lite, a React-based PWA from scratch, resulting in a 20% increase in user migration from the Android application to the PWA, enhancing the overall user experience for the Indonesian customer base.',
+          'Led the development of Julo Lite, a React-based PWA from scratch, resulting in a noticeable increase in user migration (~20%) from the Android app, improving accessibility in low end devices.',
       },
       {
         id: 2,
-        point:
-          'Collaborated with multiple squads as part of the App Engineering squad to develop and integrate over 12 webpages into the Android application’s webview, improving cross-team collaboration efficiency by 25%.',
+        point: 'Modified Julo Lite for iOS WebView compatibility, ensuring proper session handling and platform integration, accelerating the first public release of the iOS app within 3 weeks.',
       },
       {
         id: 3,
-        point: 'Designed and implemented an internal Tagging Platform for the marketing team, accelerating tagging processes by 50%, enabling efficient customer, application, and loan tagging.',
+        point: 'Collaborated with 4+ squads to integrate 12+ webpages into the Android app via WebView, reducing the app size from 90 MB to 62 MB by offloading features to the web.',
       },
       {
         id: 4,
-        point:
-          'Successfully migrated the Grab Modal Domain from Create React App (CRA) to Vite React, reducing build times by 60% and improving runtime performance for over 10,000 active grab drivers.',
+        point: 'Designed and implemented an internal Tagging Platform for the marketing team, significantly reducing manual effort and accelerating campaign readiness.',
       },
       {
         id: 5,
-        point: 'Improved UT coverage from 0% to 70% for critical components, leading to a 35% reduction in bugs and enhancing overall code stability.',
+        point: 'Successfully migrated the Grab Modal from Create-React-App (CRA) to Vite, reducing build times and cutting local development server startup from ~15s to ~2s.',
       },
       {
         id: 6,
-        point: 'Authored comprehensive documentation for developers, streamlining development workflows.',
+        point: 'Built 10+ MoEngage campaign in-App Survey webpages integrated via WebView, enhancing user retention by enabling seamless post-popup interactions within the Android app.',
       },
       {
         id: 7,
-        point: 'Conducted thorough code reviews, providing constructive feedback that led to a 20% increase in code quality and consistency across 6+ projects.',
+        point: 'Boosted test coverage from 30% to 70% across codebase, reducing regressions and faster QA cycles.',
+      },
+      {
+        id: 8,
+        point: 'Created developer-facing documentations to assist with onboarding and usage of internal tools.',
+      },
+      {
+        id: 9,
+        point: 'Conducted PR reviews for 6+ repos, promoting consistent patterns and supporting junior dev growth.',
       },
     ],
   },
